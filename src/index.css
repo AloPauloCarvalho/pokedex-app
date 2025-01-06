@@ -37,3 +37,16 @@ a {
   border: 5px;
   cursor: pointer;
 }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-block: 2rem 1rem;
+}
+
+.pagination button {
+  min-width: 100px;
+}

@@ -1,14 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Card from '../components/Card'
+import "../css/Feed.css"
 
-const Feed = () => {
+const Feed = ({pokemons}) => {
   return (
     <section className="pokemon-feed">
-        <div className="card">
-            <img src="" alt="" />
-            <div className="text">
-                <h4 className="name"></h4>
-            </div>
-        </div>
+      {pokemons.map((pokemon, index) => (
+        <Card data={pokemon} />
+      ))}
     </section>
   )
 }
