@@ -34,10 +34,12 @@ const Home = () => {
             const res = await fetch(apiUrl);
             const data = await res.json();
 
-            setPokemons(data.results);
+            setPokemons(data.results);     
+            setTimeout(() => {setLoading(false)}, 250);
         }
 
         fetchPokemon();
+   
     }, [offSet]);
 
     useEffect(() => {

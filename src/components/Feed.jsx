@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../components/Card'
 import "../css/Feed.css"
+import { Link } from 'react-router-dom';
 
 const Feed = ({ pokemons }) => {
   return (
